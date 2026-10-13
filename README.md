@@ -18,6 +18,7 @@ about.html
 contacts.html
 css/style.css
 js/script.js
+js/metrics.js
 README.md
 ```
 
@@ -34,6 +35,26 @@ README.md
 
 Не меняйте рабочий поток ByteCamp. Не публикуйте секреты, пароли или личные данные.
 Measurement ID не является секретом; используйте только ID своего учебного потока.
+
+## События проекта
+
+- `cta_click` — открытие программы лаборатории;
+- `nav_click` — переход по основной навигации;
+- `file_download_lab` — скачивание учебной памятки;
+- `external_resource_click` — переход к внешней справке;
+- `utm_visit` — посещение с UTM-метками;
+- `read_30s` — активная страница через 30 секунд;
+- `scroll_75` — прокрутка не менее 75 процентов страницы;
+- `form_error` — попытка отправить неполную форму;
+- `generate_lead` — отправка корректно настроенной формы.
+
+Для проверки в DebugView откройте сайт с параметром `debug_mode=true`:
+
+```text
+https://ga4-analytics-lab-two.vercel.app/?debug_mode=true&utm_source=telegram&utm_medium=social&utm_campaign=ga4_lab
+```
+
+Пользовательские события не содержат имени, email и других персональных данных.
 
 ## UTM-проверка
 

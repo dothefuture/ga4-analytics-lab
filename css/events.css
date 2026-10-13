@@ -1,0 +1,10 @@
+.program-preview {
+  max-width: 760px;
+  padding: 22px 26px;
+  background: #f9fbf7;
+  border-left: 5px solid #087c73;
+}
+
+.program-preview h2 {
+  margin-top: 0;
+}

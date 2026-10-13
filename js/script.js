@@ -1,7 +1,5 @@
 'use strict';
 // Google Tag устанавливается отдельно в head каждой HTML-страницы.
-// ЗАМЕНИТЕ этим блоком старый submit-обработчик из темы 6.
-// Обработчики CTA и остальных событий оставьте. Не подключайте блок дважды.
 (() => {
   const leadForm = document.querySelector('#lead-form');
   if (!leadForm) return;
@@ -11,6 +9,9 @@
     leadForm.elements.namedItem(key).value = params.get(key)?.trim() || fallback;
   }
   const requestId = leadForm.elements.namedItem('request_id');
+  leadForm.addEventListener('invalid', () => {
+    window.gtag?.('event', 'form_error', {form_name: 'lead_form'});
+  }, true);
   leadForm.addEventListener('submit', event => {
     // Это защита от случайной отправки неполностью настроенного примера.
     if (!/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/.test(leadForm.action)) {
