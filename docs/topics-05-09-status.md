@@ -22,13 +22,13 @@
 - Форма `contacts.html` содержит поля `request_id`, `utm_source`, `utm_medium`, `utm_campaign`.
 - Клиентский код заполняет UTM из адресной строки или подставляет значения `direct`, `none`, `not_set`.
 - Приемник заявок лежит в `apps-script/Code.gs`.
-- В `contacts.html` в атрибут `action` формы нужно подставить опубликованный URL Apps Script Web App вида:
+- В `contacts.html` в атрибут `action` формы подставлен опубликованный URL Apps Script Web App:
 
 ```text
-https://script.google.com/macros/s/.../exec
+https://script.google.com/macros/s/AKfycbxqzmFu4Hn8L-QrQO6ljQOMup8vMdqHc_YsUgdnHwgA1h1MD_0UDilOb7nM7P-Ta-Yl1g/exec
 ```
 
-Пока там стоит заглушка `ВАШ_APPS_SCRIPT_URL`, форма не отправляет данные в Google Sheets.
+Развертывание Apps Script: `Приём заявок с сайта GA4 Analytics Lab`, доступ `Все`, запуск от аккаунта владельца проекта.
 
 ## Тема 8. Google Таблицы: подготовка данных
 
