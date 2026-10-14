@@ -44,7 +44,8 @@
 const programCta = document.querySelector('#program-cta');
 if (programCta) {
   programCta.addEventListener('click', () => {
-    document.querySelector('#program-preview').hidden = false;
+    const preview = document.querySelector('#program-preview');
+    if (preview) preview.hidden = false;
     if (typeof gtag === 'function') {
       gtag('event', 'cta_click', {
         button_name: 'program',
