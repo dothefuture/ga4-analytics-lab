@@ -46,6 +46,12 @@ Measurement ID не является секретом; используйте т
 - [`lesson_08`](lesson_08/README.md) — GA4: отчёты и исследования;
 - [`lesson_09`](lesson_09/README.md) — DataLens: GA4 и заявки.
 
+## Презентация к защите
+
+- [`presentation/zashchita.pdf`](presentation/zashchita.pdf) — слайды;
+- [`presentation/zashchita.pptx`](presentation/zashchita.pptx) — исходник с заметками докладчика;
+- [`presentation/doklad.md`](presentation/doklad.md) — текст доклада.
+
 В папках лежат бланки, проверочные списки и точные имена подтверждающих
 файлов. Реальные показатели, экспорты и скриншоты сервисов не подменяются
 примерными данными.
